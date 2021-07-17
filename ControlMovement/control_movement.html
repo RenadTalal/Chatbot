@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="movement.css">
+<title>Movements</title>
+</head>
+ 
+<body>
+	<header>Control Panel - Movement</header>
+	<center>
+		
+	<form method="POST" action="movement.php">
+
+    <button class="btn1" name="Forward_M">Forward</button>
+    <button class="btn2" name="Right_M">Right</button>
+    <button class="btn3" name="Backward_M">Backward</button>
+    <button class="btn4" name="Left_M">Left</button>
+    <button class="btn5" name="Stop_M">Stop</button>
+
+    </form>
+
+<a href="Control.html" class="previous"> &#8249; </a>
+	</center>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "72b547cf-356c-40fd-a016-1600c352d1c0", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "7a4cbd93-012d-4793-ac22-7883d90c1316", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
